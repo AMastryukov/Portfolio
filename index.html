@@ -5,9 +5,9 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>Alexander Mastryukov</title>
+  <meta name="description" content="Alexander Mastryukov's homepage & portfolio">
+  <meta name="author" content="Alexander Mastryukov">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -27,6 +27,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!-- Font Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -44,40 +48,61 @@
           <img id="profile-picture-image" src="images/profile.png">
         </div>
         <div id="profile-location" class="location">
+          <span class="fa fa-map-marker"> </span>
           Toronto, Ontario
         </div>
-        <div class="location">
-          but wants to travel
+        <div class="location" id="location-extra">
+          (but loves to travel)
         </div>
       </div>
-      <div class="seven columns">
+      <div class="seven columns" id="about-me">
         <div>
           <h4>About Me</h4>
-          Here's a little about me - I will say what I like here and that kind of thing.
+          My name's Alexander. I mostly design and write software, but also indulge in graphics, music production and video game development.<br><br>
+          My passion lies in video games - I've been playing games since I was a child. Now, I also take them apart and make them.<br><br>
+          If you want to get to know me better, shoot me an email to the address in the footer or find me on social media.
         </div>
       </div>
     </div>
     <div class="row">
       <div id="skills">
+        <div class="center" id="social-media">
+          <div id="social-media-links">
+            <ul>
+              <li><a href="https://github.com/AMastryukov/" class="fa fa-github-square"></a></li>
+              <li><a href="https://www.facebook.com/alexander.mastryukov.92" class="fa fa-facebook-square"></a></li>
+              <li><a href="https://www.linkedin.com/in/alexandermastryukov/" class="fa fa-linkedin-square"></a></li>
+              <li><a href="https://twitter.com/AMastryukov" class="fa fa-twitter-square"></a></li>
+            </ul>
+          </div>
+        </div>
         <div class="center">
           <h4>Skills & Special Abilities</h4>
         </div>
         <img id="skills-image" src="images/skillgraph.png">
       </div>
     </div>
-    <div class="row center" id="social-media-links">
-      Github | LinkedIn | Facebook | Twitter
+    <div class="row bordered-padded">
+      <h4 class="center">Projects</h4>
     </div>
-    <div class="row">
-      <div class="one-half column">
-        Project 1
+    <div class="row projects">
+      <div class="one-half column project">
+        <a href="https://alexandermastryukov.itch.io/hexer">
+          <h5>HeXeR</h5>
+          A 2D hacker-themed math puzzle game made using Unity written in C#.
+        </a>
       </div>
-      <div class="one-half column">
-        Project 2
+      <div class="one-half column project">
+        <a href="https://github.com/AMastryukov/AnalySuite">
+          <h5>AnalySuite</h5>
+          A simple domain-name analysis utility written in Java with the help of WindowBuilder.
+        </a>
       </div>
     </div>
-    <div class="row">
-      AlexanderMastryukov@gmail.com | (647)-705-1674
+    <div class="row bordered-padded">
+      <div class="center" id="contact">
+        <img src="images/email.png">
+      </div>
     </div>
   </div>
 
