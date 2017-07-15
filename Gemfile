@@ -18,6 +18,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', platforms: :ruby
 gem 'devise', '~> 4.2'
 gem 'activeadmin'
+gem 'active_skin'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
