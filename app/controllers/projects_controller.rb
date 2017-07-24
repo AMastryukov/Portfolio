@@ -5,7 +5,7 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
-    @projects = Project.order("created_at desc").limit(4).offset(1)
+    @projects = Project.where.not(id: params[:id]).order("created_at desc").limit(4)
   end
 
   private
