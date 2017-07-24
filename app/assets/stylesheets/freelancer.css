@@ -30,46 +30,16 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
-hr.code-light,
-hr.code-primary {
-  padding: 0;
-  border: none;
-  border-top: solid 2px;
-  text-align: center;
-  max-width: 300px;
-  margin: 25px auto 30px;
-}
-hr.code-light:after,
-hr.code-primary:after {
-  content: "\f121";
-  font-family: FontAwesome;
-  display: inline-block;
-  position: relative;
-  top: -0.8em;
-  font-size: 2em;
-  padding: 0 0.25em;
-}
-hr.code-light {
-  border-color: white;
-}
-hr.code-light:after {
-  background-color: #134584;
-  color: white;
-}
-hr.code-primary {
-  border-color: #102e4c;
-}
-hr.code-primary:after {
-  background-color: white;
-  color: #102e4c;
-}
 .img-centered {
   margin: 0 auto;
 }
 header {
   text-align: center;
-  background: #134584;
+  background-image: url("/assets/bg.png");
+  background-repeat:no-repeat;
+  background-size:cover;
   color: white;
+  padding-bottom: 100px;
 }
 header .container {
   padding-top: 100px;
@@ -85,6 +55,7 @@ header .intro-text .name {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
+  -webkit-text-stroke: 2px black;
 }
 header .intro-text .skills {
   font-size: 1.25em;
@@ -103,7 +74,7 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background: #102e4c;
+  background: #0E1C36;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -297,14 +268,14 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #102e4c;
+  background-color: #0E1C36;
 }
 footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
   padding: 25px 0;
-  background-color: #102e4c;
+  background-color: #0E1C36;
 }
 .btn-outline {
   color: white;
@@ -324,8 +295,8 @@ footer .footer-below {
 }
 .btn-primary {
   color: white;
-  background-color: #102e4c;
-  border-color: #102e4c;
+  background-color: #0E1C36;
+  border-color: #0E1C36;
   font-weight: 700;
 }
 .btn-primary:hover,
@@ -357,11 +328,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #102e4c;
-  border-color: #102e4c;
+  background-color: #0E1C36;
+  border-color: #0E1C36;
 }
 .btn-primary .badge {
-  color: #102e4c;
+  color: #0E1C36;
   background-color: white;
 }
 .btn-success {
@@ -467,7 +438,7 @@ fieldset[disabled] .btn-success.active {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #102e4c;
+  background-color: #0E1C36;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -478,7 +449,7 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #102e4c;
+  background-color: #0E1C36;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
@@ -513,4 +484,25 @@ fieldset[disabled] .btn-success.active {
 }
 div#maincontent {
   outline: none;
+}
+.profile-picture {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+.skill-divider {
+  display: block;
+  font-size: 2.5em;
+  padding: 0 0.25em;
+}
+.skill-divider hr {
+  display: inline-block;
+  width: 200px;
+  border-top: solid 2px;
+}
+.code-line {
+  display: inline-block;
+  position: relative;
+  top: -0.3em;
 }
