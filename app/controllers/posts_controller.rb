@@ -1,12 +1,15 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.all.order('created_at DESC')
-    @sorted_posts = @posts.order(:created_at).limit(4)
+    @sorted_latest_posts = @posts.order(:created_at).limit(4)
+    @older_posts = @posts - @sorted_latest_posts
   end
 
   def show
     @post = Post.find(params[:id])
-    @posts = Post.order("created_at desc").limit(4).offset(1)
+    @posts = Post.all.order("created_at DESC")
+    @sorted_latest_posts = @posts.order(:created_at).limit(4)
+    @older_posts = @posts - @sorted_latest_posts
   end
 
   private

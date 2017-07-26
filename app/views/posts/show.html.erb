@@ -1,0 +1,51 @@
+<!-- Page Content -->
+<div class="container post-container">
+    <div class="row">
+        <!-- Blog Post Content Column -->
+        <div class="col-lg-8">
+            <!-- Title -->
+            <h1>
+              <%= @post.title %>
+            </h1>
+
+            <!-- Date/Time -->
+            <p>
+              <span class="fa fa-clock-o"></span>
+              <%= @post.created_at.in_time_zone('Eastern Time (US & Canada)').strftime("Posted on %A, %d %B %Y at %H:%M EST") %>
+            </p>
+
+            <!-- Preview Image -->
+            <% if @post.image.present? %>
+              <%= image_tag(@post.image, :class => 'img-responsive blog-post-image') %>
+            <% end %>
+            <hr>
+
+            <!-- Post Content -->
+            <p>
+              <%= @post.body.html_safe %>
+            </p>
+        </div>
+
+        <!-- Blog Sidebar Widgets Column -->
+        <div class="col-md-4">
+            <!-- Blog Categories Well -->
+            <div class="well">
+                <h4>Older posts</h4>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="list-unstyled">
+                          <% @older_posts.each do |post| %>
+                            <li>
+                              <%= link_to post_path(post) do %>
+                                <%= post.title %>
+                                <%= post.created_at.in_time_zone('Eastern Time (US & Canada)').strftime("(%d %B %Y)") %>
+                              <% end %>
+                            </li>
+                          <% end %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
