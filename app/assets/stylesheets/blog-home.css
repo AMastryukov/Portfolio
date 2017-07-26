@@ -1,0 +1,31 @@
+/*!
+ * Start Bootstrap - Blog Home (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+.blog-container {
+  padding-top: 50px;
+}
+
+h2 a,
+h2 a:link,
+h2 a:visited,
+h2 a:hover,
+h2 a:active {
+  text-decoration: none;
+}
+
+.blog-post-image {
+  max-width: 900px;
+  max-height: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+a.read-more-btn,
+a:link.read-more-btn,
+a.visited.read-more-btn {
+  color: #6d9dc1;
+  margin-top: 10px;
+}

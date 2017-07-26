@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.all.order('created_at DESC')
+    @sorted_posts = @posts.order(:created_at).limit(4)
   end
 
   def show
