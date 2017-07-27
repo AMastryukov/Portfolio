@@ -4,7 +4,14 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 .portfolio-item {
-    margin-bottom: 25px;
+    margin: 15px 0px 20px 0px;
+
+}
+
+.portfolio-item img {
+    margin: auto;
+    width: 250px;
+    height: 250px;
 }
 
 .project-item {
@@ -13,7 +20,7 @@
 }
 
 .main-portfolio-image {
-  margin: auto;
-  max-height: 410px;
-  max-width: 780px;
+  max-height: 450px;
+  max-width: 450px;
+  margin-bottom: 20px;
 }

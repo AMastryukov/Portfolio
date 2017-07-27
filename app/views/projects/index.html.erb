@@ -6,10 +6,11 @@
                 <h2>Portfolio</h2>
                 <hr class="star-primary">
                 <% @projects.each do |project| %>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                   <%= link_to project_path(project) do %>
                     <%= image_tag project.image, class: 'img-responsive' %>
-                    <% end %>
+                  <% end %>
+                  <h6><%= project.title %></h6>
                 </div>
                 <% end %>
             </div>
