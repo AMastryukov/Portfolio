@@ -22,5 +22,7 @@
 
 .byebug_history
 
-# Ignore post images
-/public/system/posts/images
+
+# Ignore uploaded images
+/public/system/projects/images/*
+/public/system/posts/images/*
