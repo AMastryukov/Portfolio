@@ -8,8 +8,8 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
     @posts = Post.all.order("created_at DESC")
-    @sorted_latest_posts = @posts.order(:created_at).limit(4)
-    @older_posts = @posts - @sorted_latest_posts
+    @sorted_latest_posts = @posts.order(:created_at).limit(20)
+    @older_posts = @posts - [@post]
   end
 
   private
