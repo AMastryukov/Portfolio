@@ -34,15 +34,7 @@ h6 {
   margin: 0 auto;
 }
 header {
-  text-align: center;
-  background-image: url("/assets/bg.png");
-  background-repeat:no-repeat;
-  background-size:cover;
-  color: white;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
 }
 header .container {
   padding-top: 80px;

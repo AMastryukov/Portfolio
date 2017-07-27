@@ -4,3 +4,19 @@
 .about-me-text {
   padding-bottom: 20px;
 }
+
+.header-pattern {
+  background-image: url("/assets/pattern.png");
+  background-repeat: repeat-x;
+  height: 50px;
+}
+
+header {
+  text-align: center;
+  background-image: url("/assets/bg.png");
+  color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
