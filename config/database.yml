@@ -2,8 +2,8 @@ development:
   adapter: postgresql
   host: localhost
   pool: 5
-  username: postgres
-  password: pgpass
+  username: ubuntu
+  password: password
   database: portfolio_development
 
 test:
@@ -14,6 +14,8 @@ test:
 
 production:
   adapter: postgresql
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
   database: portfolio_production
   pool: 5
   timeout: 5000
